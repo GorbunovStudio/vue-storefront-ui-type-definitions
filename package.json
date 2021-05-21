@@ -1,0 +1,33 @@
+{
+    "name": "@types/storefront-ui__vue",
+    "version": "0.7.0",
+    "description": "TypeScript definitions for @storefront-ui",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": " Luïs De Zutter",
+            "url": "https://github.com/ImLuze",
+            "githubUsername": "ImLuze"
+        },
+        {
+            "name": "Wojciech Sikora",
+            "url": "https://github.com/SikoraWojciech",
+            "githubUsername": "SikoraWojciech"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/storefront-ui__vue"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/glidejs__glide": "*",
+        "vue": "^2.0.0",
+        "vue-router": "^3.0.0"
+    },
+    "typesPublisherContentHash": "8b8a64dac288aea806bab4165e32866c07327e159757b021fbb25dca3f229d87",
+    "typeScriptVersion": "3.7"
+}
