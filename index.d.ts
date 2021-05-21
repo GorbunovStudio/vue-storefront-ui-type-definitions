@@ -88,7 +88,7 @@ export namespace SfBreadcrumbs {
         breadcrumbs: Breadcrumb[];
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         last: number;
     }
 
@@ -104,7 +104,7 @@ export namespace SfBullets {
         current: number;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         inactiveRight: number;
         inactiveLeft: number;
     }
@@ -136,7 +136,7 @@ export namespace SfCheckbox {
         selected: boolean | string[];
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isChecked: boolean;
     }
 
@@ -173,7 +173,7 @@ export namespace SfColor {
         hasBadge: boolean;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         style: Record<string, string>;
     }
 
@@ -190,7 +190,7 @@ export namespace SfHeading {
         subTitle: string;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         hasSubtitle: boolean;
     }
 
@@ -210,7 +210,7 @@ export namespace SfIcon {
         badgeLabel: string;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isSFColors: boolean;
         isSFSizes: boolean;
         iconColorClass: string;
@@ -242,7 +242,7 @@ export namespace SfImage {
         isLoaded: boolean;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isPicture: boolean;
         source: Source | null;
         noscript: string;
@@ -279,7 +279,7 @@ export namespace SfInput {
         isNumberTypeSafari: boolean;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         listeners: Vue['$listeners'];
         isPassword: boolean;
     }
@@ -301,7 +301,7 @@ export namespace SfLink {
         link: string | Location;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isExternal: boolean;
         isNativeLinkTag: boolean;
         urlTag: { href: Props['link'] } | { to: Props['link'] };
@@ -330,7 +330,7 @@ export namespace SfOverlay {
         visible: boolean;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         staticClass: string;
         className: string;
     }
@@ -380,7 +380,7 @@ export namespace SfRating {
         score: number;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         finalScore: number;
         finalMax: number;
     }
@@ -408,7 +408,7 @@ export namespace SfAlert {
         type: 'secondary' | 'info' | 'success' | 'warning' | 'danger';
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         icon: 'added_to_cart' | 'info_shield' | 'info_circle';
     }
 
@@ -428,7 +428,7 @@ export namespace SfBanner {
         image: string | Source;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isMobile: boolean;
         mobileObserverClients: number;
         mobileObserverIsInitialized: boolean;
@@ -483,7 +483,7 @@ export namespace SfCallToAction {
         image: string | Source;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         style: {
             ['--_call-to-action-background-image']: string;
             ['--_call-to-action-background-desktop-image']: string;
@@ -563,7 +563,7 @@ export namespace SfGallery {
         style: string;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         mapPictures: Image[];
         updatedSliderOptions: Glide.Options;
     }
@@ -635,7 +635,7 @@ export namespace SfNotification {
         type: 'secondary' | 'info' | 'success' | 'warning' | 'danger';
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         icon: 'added_to_cart' | 'info_shield' | 'info_circle';
     }
 
@@ -660,7 +660,7 @@ export namespace SfPagination {
         pageParamName: string;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         hasRouter: boolean;
         compoenntIs: 'sf-link' | 'sf-button';
         currentPage: number;
@@ -708,7 +708,7 @@ export namespace SfRadio {
         selected: string;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isChecked: boolean;
     }
 
@@ -739,7 +739,7 @@ export namespace SfReview {
         isOpen: boolean;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         showButton: boolean;
         buttonText: string;
         finalMessage: string;
@@ -770,7 +770,7 @@ export namespace SfScrollable {
         contentEl: any;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         style: {
             ['--_scrollable-max-height']: string | undefined;
         };
@@ -868,7 +868,7 @@ export namespace SfSlidingSection {
         hasStaticHeight: boolean;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isMobile: boolean;
         mobileObserverClients: number;
         mobileObserverIsInitialized: boolean;
@@ -899,7 +899,7 @@ export namespace SfSteps {
         steps: any[];
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         parsedSteps: any[];
         progress: {
             ['--_steps-progress-width']: string;
@@ -938,7 +938,7 @@ export namespace SfSticky {
         isBound: boolean;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isIE: boolean;
         maxWidth: number;
         scrollBegin: number;
@@ -1005,7 +1005,7 @@ export namespace SfCarousel {
         defaultSettings: Glide.Options;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         mergedOptions: Glide.Options;
     }
 
@@ -1052,7 +1052,7 @@ export namespace SfContentPages {
         items: any[];
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isMobile: boolean;
         mobileObserverClients: number;
         mobileObserverIsInitialized: boolean;
@@ -1083,7 +1083,7 @@ export namespace SfFooter {
         items: any[];
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isMobile: boolean;
         mobileObserverClients: number;
         mobileObserverIsInitialized: boolean;
@@ -1115,7 +1115,7 @@ export namespace SfGroupedProduct {
         defaultSettings: Glide.Options;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         glideSettings: Glide.Options;
     }
 
@@ -1157,7 +1157,7 @@ export namespace SfHeader {
         animationDuration: number;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isMobile: boolean;
         mobileObserverClients: number;
         mobileObserverIsInitialized: boolean;
@@ -1190,7 +1190,7 @@ export namespace SfHero {
         defaultOptions: Glide.Options;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         mergedOptions: Glide.Options;
         numberOfPages: number;
         page: number;
@@ -1220,7 +1220,7 @@ export namespace SfMegaMenu {
         items: string[];
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isMobile: boolean;
         mobileObserverClients: number;
         mobileObserverIsInitialized: boolean;
@@ -1266,7 +1266,7 @@ export namespace SfProductCard {
         isAddingToCart: boolean;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         isSFColors: boolean;
         badgeColorClass: string;
         currentWishlistIcon: Icon;
@@ -1311,7 +1311,7 @@ export namespace SfProductCardHorizontal {
         qty: string | number;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         currentWishlistIcon: Icon;
         ariaLabel: 'Remove from wishlist' | 'Add to wishlist';
         wishlistIconClasses: 'sf-product-card-horizontal__wishlist-icon' | 'sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist';
@@ -1345,7 +1345,7 @@ export namespace SfSidebar {
         className: string;
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         visibleOverlay: boolean;
         transitionName: string;
         hasTop: boolean;
@@ -1387,7 +1387,7 @@ export namespace SfStoreLocator {
         stores: any[];
     }
 
-    interface Computed {
+    interface Computed extends DefaultComputed {
         computedMapOptions: object;
         internalCenter: number[] | object;
     }
