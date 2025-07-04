@@ -10,6 +10,12 @@ import { Location } from 'vue-router';
 import Glide = require('@glidejs/glide');
 import { DefaultComputed } from 'vue/types/options';
 
+export type StorefrontUiInstanceType<T extends {
+    props: any,
+    data?: () => any,
+    methods?: any
+} & VueConstructor> = InstanceType<T> & T['props'] & (T extends { data: () => infer D } ? D : {}) & T['methods'];
+
 export type Icon = 'add_to_cart'
     | 'added_to_cart'
     | 'empty_cart'
