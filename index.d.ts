@@ -617,6 +617,7 @@ export namespace SfModal {
         checkPersistence: () => void;
         keydownHandler: (e: KeyboardEvent) => void;
         classHandler: () => void;
+        updateDirectivesData: () => void;
     }
 
     interface Constructor extends VueConstructor {
